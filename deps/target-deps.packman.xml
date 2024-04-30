@@ -1,0 +1,52 @@
+<project toolsVersion="5.6">
+
+<!-- There's an associated pyver=37 in premake5.lua, also ensure that the omni_usd_resolver python matches -->
+  <dependency name="python" linkPath="../_build/target-deps/python">
+    <package name="python" version="3.7.15+nv2-${platform}"/> 
+    <!-- <package name="python" version="3.9.13+nv3-${platform}"/> -->
+  </dependency>
+
+<!-- For USD 21.08 and later these usdPhysics schema deps must be commeted out -->
+<!-- -->
+  <dependency name="usd_ext_physics_release" linkPath="../_build/target-deps/usd_ext_physics/release">
+    <package name="usd_ext_physics" version="20.08.2791.90355301-win64_py37_release-physics-develop" platforms="windows-x86_64"/>
+    <package name="usd_ext_physics" version="20.08.3300.90355301-linux-x86_64_py37_release-physics-develop" platforms="linux-x86_64"/>
+  </dependency>
+  <dependency name="usd_ext_physics_debug" linkPath="../_build/target-deps/usd_ext_physics/debug">
+    <package name="usd_ext_physics" version="20.08.2815.90355301-win64_py37_debug-physics-develop" platforms="windows-x86_64"/>
+    <package name="usd_ext_physics" version="20.08.3303.90355301-linux-x86_64_py37_debug-physics-develop" platforms="linux-x86_64"/>
+  </dependency>
+
+  <dependency name="omni_usd_resolver" linkPath="../_build/target-deps/omni_usd_resolver">
+    <package name="omni_usd_resolver.nv-20_08.py37.${platform}" version="1.20.0" />
+  </dependency>
+<!-- -->
+
+<!--
+  <dependency name="omni_usd_resolver" linkPath="../_build/target-deps/omni_usd_resolver">
+    <package name="omni_usd_resolver.pxr-22_08-ar2.py39.${platform}" version="1.19.0-mr101.3656+tc.3667619f" />
+  </dependency>
+ -->
+<!-- 
+  <dependency name="omni_usd_resolver" linkPath="../_build/target-deps/omni_usd_resolver">
+    <package name="omni_usd_resolver.pxr-22_05b-ar2.py37.${platform}" version="1.18.0" />
+  </dependency>
+ -->
+
+  <dependency name="nlohmann-json" linkPath="../_build/target-deps/nlohmann-json">
+    <package name="nlohmann-json" version="3.7.3-3fff8cd2-repackaged"/>
+  </dependency>
+
+  <dependency name="tinytoml" linkPath="../_build/target-deps/tinytoml">
+    <package name="tinytoml" version="nv-master-2-e55461ce"/>
+  </dependency>
+
+  <dependency name="carb_sdk_plugins" linkPath="../_build/target-deps/carb_sdk_plugins">
+    <package name="carb_sdk+plugins.${platform}" version="137.0" />
+  </dependency>
+
+  <dependency name="omni_asset_validator" linkPath="../_build/target-deps/omni_asset_validator">
+    <package name="omni_asset_validator" version="0.2.2+v0.2.2.515.f1d7e700.tc.${platform}" />
+  </dependency>
+
+</project>

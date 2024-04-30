@@ -1,0 +1,151 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 0.01
+    upAxis = "Z"
+)
+
+def Xform "World" (
+    kind = "component"
+)
+{
+    def Mesh "Coaster_Hexagon" (
+        prepend apiSchemas = ["ShadowAPI", "MaterialBindingAPI"]
+    )
+    {
+        float3[] extent = [(-5.8325367, -5.051125, -1.1920929e-7), (5.8325367, 5.051125, 1.2432822)]
+        int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+        int[] faceVertexIndices = [16, 17, 1, 5, 0, 8, 9, 2, 3, 11, 8, 0, 4, 13, 11, 3, 6, 14, 13, 4, 7, 15, 14, 6, 2, 9, 15, 7, 18, 19, 12, 10, 20, 21, 10, 12, 22, 23, 5, 1, 16, 5, 4, 3, 17, 16, 3, 0, 1, 17, 0, 2, 9, 8, 18, 10, 8, 11, 19, 18, 11, 13, 12, 19, 13, 14, 20, 12, 14, 15, 21, 20, 15, 9, 10, 21, 22, 1, 2, 7, 23, 22, 7, 6, 5, 23, 6, 4]
+        rel material:binding = </World/Looks/M_Coaster_Hexagon> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        normal3f[] normals = [(-0.13517104, 0.23412307, -0.9627643), (0.13517101, 0.23412308, -0.9627643), (0.27034208, -2.500075e-8, -0.9627643), (-0.27034205, -2.5000752e-8, -0.96276444), (0.43909413, 0.76053345, -0.47831494), (0.43909413, 0.76053345, 0.47831494), (0.8781884, -1.8256982e-8, 0.478315), (0.8781884, -2.1908377e-8, -0.478315), (-0.43909425, 0.7605334, -0.47831497), (-0.43909422, 0.7605334, 0.47831497), (0.43909413, 0.76053345, 0.47831494), (0.43909413, 0.76053345, -0.47831494), (-0.8781884, -9.493629e-8, -0.47831494), (-0.8781884, -1.02239085e-7, 0.47831494), (-0.43909422, 0.7605334, 0.47831497), (-0.43909425, 0.7605334, -0.47831497), (-0.43909416, -0.76053345, -0.47831497), (-0.43909416, -0.76053345, 0.47831503), (-0.8781884, -1.02239085e-7, 0.47831494), (-0.8781884, -9.493629e-8, -0.47831494), (0.43909413, -0.76053345, -0.4783149), (0.43909413, -0.76053345, 0.47831497), (-0.43909416, -0.76053345, 0.47831503), (-0.43909416, -0.76053345, -0.47831497), (0.8781884, -2.1908377e-8, -0.478315), (0.8781884, -1.8256982e-8, 0.478315), (0.43909413, -0.76053345, 0.47831497), (0.43909413, -0.76053345, -0.4783149), (0.13517104, 0.23412308, 0.96276444), (-0.13517106, 0.23412305, 0.96276444), (-0.27034205, -3.5001054e-8, 0.96276444), (0.27034208, -2.500075e-8, 0.9627643), (-0.135171, -0.23412308, 0.9627643), (0.13517103, -0.23412311, 0.9627643), (0.27034208, -2.500075e-8, 0.9627643), (-0.27034205, -3.5001054e-8, 0.96276444), (0.13517103, -0.23412311, -0.9627643), (-0.135171, -0.23412308, -0.9627643), (-0.27034205, -2.5000752e-8, -0.96276444), (0.27034208, -2.500075e-8, -0.9627643), (-0.13517104, 0.23412307, -0.9627643), (-0.27034205, -2.5000752e-8, -0.96276444), (-0.8781884, -9.493629e-8, -0.47831494), (-0.43909425, 0.7605334, -0.47831497), (0.13517101, 0.23412308, -0.9627643), (-0.13517104, 0.23412307, -0.9627643), (-0.43909425, 0.7605334, -0.47831497), (0.43909413, 0.76053345, -0.47831494), (0.27034208, -2.500075e-8, -0.9627643), (0.13517101, 0.23412308, -0.9627643), (0.43909413, 0.76053345, -0.47831494), (0.8781884, -2.1908377e-8, -0.478315), (0.8781884, -1.8256982e-8, 0.478315), (0.43909413, 0.76053345, 0.47831494), (0.13517104, 0.23412308, 0.96276444), (0.27034208, -2.500075e-8, 0.9627643), (0.43909413, 0.76053345, 0.47831494), (-0.43909422, 0.7605334, 0.47831497), (-0.13517106, 0.23412305, 0.96276444), (0.13517104, 0.23412308, 0.96276444), (-0.43909422, 0.7605334, 0.47831497), (-0.8781884, -1.02239085e-7, 0.47831494), (-0.27034205, -3.5001054e-8, 0.96276444), (-0.13517106, 0.23412305, 0.96276444), (-0.8781884, -1.02239085e-7, 0.47831494), (-0.43909416, -0.76053345, 0.47831503), (-0.135171, -0.23412308, 0.9627643), (-0.27034205, -3.5001054e-8, 0.96276444), (-0.43909416, -0.76053345, 0.47831503), (0.43909413, -0.76053345, 0.47831497), (0.13517103, -0.23412311, 0.9627643), (-0.135171, -0.23412308, 0.9627643), (0.43909413, -0.76053345, 0.47831497), (0.8781884, -1.8256982e-8, 0.478315), (0.27034208, -2.500075e-8, 0.9627643), (0.13517103, -0.23412311, 0.9627643), (0.13517103, -0.23412311, -0.9627643), (0.27034208, -2.500075e-8, -0.9627643), (0.8781884, -2.1908377e-8, -0.478315), (0.43909413, -0.76053345, -0.4783149), (-0.135171, -0.23412308, -0.9627643), (0.13517103, -0.23412311, -0.9627643), (0.43909413, -0.76053345, -0.4783149), (-0.43909416, -0.76053345, -0.47831497), (-0.27034205, -2.5000752e-8, -0.96276444), (-0.135171, -0.23412308, -0.9627643), (-0.43909416, -0.76053345, -0.47831497), (-0.8781884, -9.493629e-8, -0.47831494)] (
+            interpolation = "faceVarying"
+        )
+        uniform token orientation = "rightHanded"
+        point3f[] points = [(2.916268, 5.051125, 0.5439999), (4.6022925, -4.649759e-8, -1.1920929e-7), (5.8325367, 0, 0.54399997), (-2.9162686, 5.0511246, 0.5439999), (-5.8325367, -5.0989655e-7, 0.5439999), (-4.6022925, -4.488428e-7, -1.1920929e-7), (-2.9162676, -5.051125, 0.5439999), (2.9162676, -5.051125, 0.54399997), (2.916268, 5.051125, 0.69928217), (5.8325367, 0, 0.6992821), (4.6022925, -4.649759e-8, 1.2432822), (-2.9162686, 5.0511246, 0.69928217), (-4.6022925, -4.488428e-7, 1.2432822), (-5.8325367, -5.0989655e-7, 0.69928217), (-2.9162676, -5.051125, 0.69928217), (2.9162676, -5.051125, 0.6992821), (-2.3011465, 3.9857018, -1.1920929e-7), (2.301146, 3.9857023, -1.1920929e-7), (2.301146, 3.9857023, 1.2432822), (-2.3011465, 3.9857018, 1.2432822), (-2.3011456, -3.9857023, 1.2432822), (2.3011456, -3.9857023, 1.2432822), (2.3011456, -3.9857023, -1.1920929e-7), (-2.3011456, -3.9857023, -1.1920929e-7)]
+        color3f[] primvars:displayColor = [(0.6, 0.8941177, 0.6)]
+        float2[] primvars:st = [(0.7190171, 0.44989842), (0.9237483, 0.56926167), (0.27240956, 0.005), (0.53981906, 0.16150543), (0.53512293, 0.1642269), (0.27240956, 0.010350851), (0.53981906, 0.47131944), (0.53512293, 0.468598), (0.2724095, 0.62782496), (0.27240947, 0.622474), (0.005, 0.47131935), (0.009696085, 0.46859795), (0.005, 0.16150543), (0.009696085, 0.1642269), (0.92374843, 0.8065731), (0.7190172, 0.92593664), (0.5142859, 0.8065733), (0.51428586, 0.56926197), (0.27240953, 0.077650644), (0.47662562, 0.19767602), (0.47662553, 0.4351489), (0.27240947, 0.55517423), (0.719017, 0.38083506), (0.9836663, 0.5348658), (0.98366636, 0.84096897), (0.06819341, 0.43514884), (0.06819341, 0.19767602), (0.71901727, 0.995), (0.454368, 0.84096915), (0.45436788, 0.5348661)] (
+            interpolation = "faceVarying"
+        )
+        int[] primvars:st:indices = [1, 14, 15, 0, 3, 4, 5, 2, 6, 7, 4, 3, 8, 9, 7, 6, 10, 11, 9, 8, 12, 13, 11, 10, 2, 5, 13, 12, 19, 20, 21, 18, 25, 26, 18, 21, 16, 17, 0, 15, 1, 0, 22, 23, 14, 1, 23, 24, 15, 14, 24, 27, 5, 4, 19, 18, 4, 7, 20, 19, 7, 9, 21, 20, 9, 11, 25, 21, 11, 13, 26, 25, 13, 5, 18, 26, 16, 15, 27, 28, 17, 16, 28, 29, 0, 17, 29, 22]
+        custom uint[] smoothgroups3DSMax = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        uniform token subdivisionScheme = "none"
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "M_Coaster_Hexagon"
+        {
+            token outputs:mdl:displacement.connect = </World/Looks/M_Coaster_Hexagon/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </World/Looks/M_Coaster_Hexagon/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </World/Looks/M_Coaster_Hexagon/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                asset inputs:diffuse_texture = @./Textures/Coaster_Hexagon_BaseColor.png@ (
+                    colorSpace = "sRGB"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Albedo"
+                    displayName = "Albedo Map"
+                    hidden = false
+                )
+                bool inputs:enable_ORM_texture = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Enable ORM Texture"
+                    doc = "When True the ORM texture will be used to extract the Occlusion, Roughness and Metallic Map"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                float inputs:metallic_texture_influence = 1 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Metallic Map Influence"
+                    doc = "Blends between the constant value and the lookup of the metallic texture"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/Coaster_Hexagon_Normal.png@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    doc = "Enables the usage of the normalmap texture"
+                    hidden = false
+                )
+                asset inputs:ORM_texture = @./Textures/Coaster_Hexagon_ORM.png@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "ORM Map"
+                    doc = "Texture that hae Occlusion, Roughness and Metallic map stored in the respective r, g and b channels"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 1 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_texture_influence = 1 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Roughness Map Influence"
+                    doc = "Blends between the constant value and the lookup of the roughness texture"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Reflectivity"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+                token outputs:out
+            }
+        }
+    }
+}
+

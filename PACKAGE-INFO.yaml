@@ -1,0 +1,15 @@
+Package : connect-samples-launcher-signed
+Version : 527-windows-x86_64
+Maintainers : N/A
+Description : N/A
+Repository : ssh://git@gitlab-master.nvidia.com:12051/omniverse/connect-sample-launcher-package.git
+Branch : main
+Commit : d37caa63a59f11cfeb6befd415d036474910e721
+Time : Thu Feb  2 13:06:32 2023
+Builder Name : DESKTOP-UCUIBJT
+Packman Version : 6.38.1
+Packagemaker Version : 5.2.9
+Platform : windows-x86_64
+CI Build Number : 527
+CI System : Teamcity
+CI Version : 2022.04.2 (build 108655)

@@ -1,0 +1,4 @@
+pathtools
+watchdog
+attrs
+pyperclip-1.8.0

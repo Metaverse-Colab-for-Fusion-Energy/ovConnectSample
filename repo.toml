@@ -1,0 +1,40 @@
+[repo]
+name = "connect-sample"
+logging = "warn"
+
+[repo_build]
+fetch.packman_target_files_to_pull = [
+    "${root}/deps/target-deps.packman.xml",
+    "${root}/deps/usd-deps.packman.xml",
+]
+
+msbuild.sln_file = "Samples.sln"
+msbuild.vs_version = 'vs2019'
+docker.enabled = false
+
+[repo_test]
+default_config = "release"
+
+
+# Example of Python "pytest"
+[repo_test.suites.pytest]
+kind = "pytest"
+
+# Record test results to file. Provide a file path ending in .xml extension
+# to record a junit compatible report.
+log_file = "_testoutput/results.xml"
+
+# Specify extra paths to include in PYTHONPATH. Supports wildcards.
+# Note pythonpath is also supported for backwards compatibility.
+python_paths = [
+   "${root}/source/pyHelloWorld"
+]
+
+# Specify suite specific environment variables.
+module_path = "${root}/tests/test_all.py"
+
+env_vars = [
+#    [ "OMNI_BASE_URL", "omniverse://localhost/Projects/samplesTest" ],
+#    [ "OMNI_USER", "connect_sample" ],
+#    [ "OMNI_PASS", "connect_sample" ],
+]
